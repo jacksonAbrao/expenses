@@ -56,7 +56,7 @@ class _TransactionFormState extends State<TransactionForm> {
                 TextButton(
                   onPressed: _submitForm,
                   style: TextButton.styleFrom(
-                      backgroundColor: Colors.purple,
+                      backgroundColor: Theme.of(context).colorScheme.primary,
                       primary: Colors.white,
                       shape: const RoundedRectangleBorder(
                         borderRadius: BorderRadius.all(Radius.circular(3.0)),

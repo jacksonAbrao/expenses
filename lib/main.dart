@@ -18,15 +18,14 @@ class ExpensesApp extends StatelessWidget {
       home: MyHomePage(),
       theme: tema.copyWith(
         colorScheme: tema.colorScheme.copyWith(
-          primary: Colors.purple,
-          secondary: Colors.amber,
+          primary: Colors.green,
+          secondary: Colors.black,
         ),
         textTheme: tema.textTheme.copyWith(
           headline6: TextStyle(
             fontFamily: 'OpenSans',
             fontSize: 18,
             fontWeight: FontWeight.bold,
-            color: Colors.black,
           ),
         ),
         appBarTheme: AppBarTheme(
@@ -47,7 +46,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final _transactions = [
+  final List<Transaction> _transactions = [
     Transaction(
         id: "t1",
         title: "Novo Tênis teste",
